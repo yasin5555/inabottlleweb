@@ -1,0 +1,26 @@
+{
+  "name": "in-a-bottle.dev",
+  "version": "1.0.0",
+  "description": "What is CodeIgniter\r ###################",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcit-ci/CodeIgniter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcit-ci/CodeIgniter/issues"
+  },
+  "homepage": "https://github.com/bcit-ci/CodeIgniter#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
