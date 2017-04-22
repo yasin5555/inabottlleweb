@@ -27,10 +27,11 @@
                     <li><a href="#">Incendie</a></li>
                     <li><a href="#">Seisme</a></li>
                     <li><a href="#">Accident de la route</a></li>
-                    <li><a href="#">AUtres</a></li>
+                    <li><a href="#">Autres</a></li>
                 </ul>
             </li>
         </ul>
     </div><!-- /.navbar-collapse -->
     </div>
 </nav>
+

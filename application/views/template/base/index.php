@@ -34,5 +34,7 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG9JH8LGpGuXa9Men4FjD06AKx7B94_7A&callback=myMap">
     </script>
 <script src="<?= base_url("assets/js/app.js")?>"></script>
+<script src="<?= base_url("assets/js/markerclusterer.js")?>"></script>
+<script src="<?= base_url("node_modules/jquery/dist/jquery.js")?>"></script>
 </body>
 </html>
