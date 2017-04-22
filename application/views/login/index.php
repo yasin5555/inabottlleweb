@@ -1,8 +1,9 @@
-<!doctype html>
+<!Doctype html>
 <html>
 <head>
 	<title># in a bottle</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="<?= base_url("node_modules/bootstrap/dist/css/bootstrap.css")?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/login.css'); ?>">
     
 </head>
@@ -11,14 +12,16 @@
 		<div id="boxcenter">
 			<div id="boxone">
 				<div>
-					<img src="http://img4.hostingpics.net/pics/249732inabotlltlemin.png">
+				<a href="<?= base_url("map")?>">
+				<img src="http://img4.hostingpics.net/pics/249732inabotlltlemin.png">
+				</a>
 					<p>Connectez-vous à votre compte</p>
 				</div>
 			</div>
 			<div id="boxtwo">
 
 <?php echo validation_errors(); ?>
-<?= form_open('contact'); ?>
+<?= form_open('login'); ?>
 <?php
 
 $data_email = array(
