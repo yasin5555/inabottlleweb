@@ -1,0 +1,21 @@
+    	body {font-family: 'Lato', sans-serif;background-color: rgba(35, 137, 158, 0.09);}
+    	#bottle {margin-top: 70px;width: 422px;margin-left: auto;margin-right: auto;}
+    	#boxcenter {display: flex;flex-direction:column;}
+    	#boxone {display: table;margin-left: auto;margin-right: auto;}
+    	/*#boxone > div {display: flex;}*/
+    	#boxone img {width: 45%; height: 45%; display: block; margin-left: auto; margin-right: auto;}
+    	#boxone p {font-size: 24px; line-height: 30px; text-align: center; font-family: 'Lato', sans-serif; color: #23899e !important;font-weight: bold;}
+    	#boxtwo {background-color: white;box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);margin:0em 0em 1em;padding: 1em 1em;border-radius: 0.28571429rem;
+    	border: 1px solid rgba(34, 36, 38, 0.15)}
+
+    	#boxtwo input {width: 100%;}
+    	#boxtwo > form > input {padding: 1em;box-sizing: border-box;border-radius: 0.28571429rem;}
+    	#boxtwo > form > input:nth-child(1) {margin-bottom: 15px;}
+    	#boxtwo > form > input:nth-child(2) {margin-bottom: 15px;}
+    	#boxtwo > form > input:nth-child(3) {font-family: 'Lato', sans-serif;font-weight: bold;color: white;font-size: 16px;background-color: #23899e;padding: 13px;}
+    	#boxtwo > form > input:nth-child(3):hover {cursor: pointer;}
+    	#boxtwo span {width: 100%;display: block;}
+    	#boxthree {background-color: white;width: 100%;border-radius: 0.28571429rem;  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);border: 1px solid rgba(34, 36, 38, 0.15);}
+    	#boxthree > div {text-align: center;line-height: 23px;padding: 9px 0px;}
+    	a {color: #4183C4;text-decoration: none;}
+        #boxtwo > form > input:nth-child(3):hover {background-color: #81c2bb;}
