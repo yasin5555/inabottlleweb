@@ -13,6 +13,9 @@
     body > div {position: relative;}
     header > ul > li {font-size: 25px;margin-left: 97px;}
 
+
+    header ul {border-radius: 0px 0px 40px 40px;list-style-type: none; margin: 0; padding: 0; overflow: hidden; width: 64%; margin-left: 150px; display: inline-table; background-color: #22899f;}
+
     header ul {
 		-webkit-box-shadow: 0px 0px 30px 5px rgba(255,255,255,1);
 		-moz-box-shadow: 0px 0px 30px 5px rgba(255,255,255,1);
@@ -162,15 +165,18 @@
 	<div>
 		<nav class="social">
 	          <ul>
+
 	              <li><a href="<?php echo base_url("users") ?>">Utilisateur <i class="fa fa-user"></i></a></li>
 	              <li><a href="<?php echo base_url("maps") ?>">Maps <i class="fa fker"><img width="100%" src="http://img4.hostingpics.net/pics/21419510410ddd6.png"></i></a></li>
 	              <li><a href="<?php echo base_url("twitter") ?>">Twitter <i class="fa fa-twitter"></i></a></li>
 	              <li><a href="<?php echo base_url("facebook") ?>">Facebook <i class="fa fa-facebook"></i></a></li>
 	              <li><a href="<?php echo base_url("instagram") ?>">Instagram <i class="fa fa-instagram"></i></a></li>
+
 	          </ul>
 	    </nav>
     </div>
     <div id="divflex">
+
     	<div class="divflexi"><img width="100%" src="http://img.clubic.com/04811968-photo-twitter-fly-nouvelle-interface.jpg"></div>
     	<div class="divflexi"><img style="height:initial;" width="100%" src="http://my.fakingnews.firstpost.com/files/2015/01/FB_Wall.jpg"></div>
     	<div class="divflexi" style="overflow:hidden;"><img style="height: initial;" width="100%" src="http://img.clubic.com/05700840-photo-flux-instagram-sur-le-web.jpg"></div>
@@ -188,6 +194,7 @@
     	.divflexi:nth-child(4) img {}
     	.divflexi:nth-child(5) img {}
     	.social a {padding: 15px 0px 15px 58px;}
+
     </style>
 
 </body>

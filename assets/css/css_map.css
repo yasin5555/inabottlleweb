@@ -1,0 +1,8 @@
+.navbar-center {
+    margin-left: 35%;
+}
+ #map {
+   height: 700px;
+   width: 100%;
+   position: absolute;
+ }

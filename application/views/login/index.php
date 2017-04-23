@@ -1,8 +1,9 @@
-<!doctype html>
+<!Doctype html>
 <html>
 <head>
-	<title>hashtag in a bottle</title>
+	<title># in a bottle</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="<?= base_url("node_modules/bootstrap/dist/css/bootstrap.css")?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/login.css'); ?>">
     
 </head>
@@ -11,19 +12,44 @@
 		<div id="boxcenter">
 			<div id="boxone">
 				<div>
-					<img src="http://img4.hostingpics.net/pics/249732inabotlltlemin.png">
+				<a href="<?= base_url("map")?>">
+				<img src="http://img4.hostingpics.net/pics/249732inabotlltlemin.png">
+				</a>
 					<p>Connectez-vous à votre compte</p>
 				</div>
 			</div>
 			<div id="boxtwo">
-				<form name="ProfileForm" onsubmit="return CheckInputs();" action="http://link-be.mediamarkt.be/u/register.php" method="get">
-					<input type="text" name="email" placeholder="Votre adresse e-mail">
-					<input type="text" name="email" placeholder="Votre mot de passe">
-					<input type="button" onclick="javascript:SubmitIt()" name="submit1" value="Inscrivez-vous !">
-				</form>
+
+<?php echo validation_errors(); ?>
+<?= form_open('login'); ?>
+<?php
+
+$data_email = array(
+        'name'  => 'email',
+        'Class'   => 'form-control',
+        'value' => set_value("email"),
+		'placeholder' => "Your e-mail"
+);
+
+$data_password = array(
+        'name'  => 'password',
+        'Class'   => 'form-control',
+        'value' => set_value("password"),
+		'placeholder' => "Your e-mail"
+);
+?>
+
+<h5>Password</h5>
+<?= form_input($data_password); ?>
+
+<h5>Email Address</h5>
+<?= form_input($data_email); ?>
+
+<?= form_close() ?>
+
 			</div>
 			<div id="boxthree">
-				<div>Nouveau ? <a href="#">Inscrivez-vous</a><br>Mot de passe perdu ? <a href="#">Cliquez-ici</a></div>
+				<div>New ? <?php echo form_submit('mysubmit', 'Register now!', array('class' => 'btn btn-primary')); ?><br>Mot de passe perdu ? <a href="#">Cliquez-ici</a></div>
 			</div>
 		</div>
 	</div>
