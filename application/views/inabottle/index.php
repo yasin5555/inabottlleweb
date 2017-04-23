@@ -174,8 +174,8 @@
     	<div class="divflexi"><img width="100%" src="http://img.clubic.com/04811968-photo-twitter-fly-nouvelle-interface.jpg"></div>
     	<div class="divflexi"><img style="height:initial;" width="100%" src="http://my.fakingnews.firstpost.com/files/2015/01/FB_Wall.jpg"></div>
     	<div class="divflexi" style="overflow:hidden;"><img style="height: initial;" width="100%" src="http://img.clubic.com/05700840-photo-flux-instagram-sur-le-web.jpg"></div>
-    	<div class="divflexi"><img src="http://meteorcapture.com/content/images/2015/03/Screen-Shot-2015-03-26-at-6-06-45-pm-1.png"></div>
-    	<div class="divflexi"><img width="100%" src="http://onlinehelp.tableau.com/current/pro/desktop/fr-fr/Img/exuserfilter8.png"></div>
+    	<div style="height: 460px;" class="divflexi"><img style="height: 460px;" src="http://meteorcapture.com/content/images/2015/03/Screen-Shot-2015-03-26-at-6-06-45-pm-1.png"></div>
+    	<div style="height: 460px;" class="divflexi"><img style="height: 460px;" width="100%" src="http://onlinehelp.tableau.com/current/pro/desktop/fr-fr/Img/exuserfilter8.png"></div>
     </div>
     <style type="text/css">
     	#divflex {margin: 140px 128px; width: 87%; display:flex;justify-content:space-around;flex-wrap:wrap;}
