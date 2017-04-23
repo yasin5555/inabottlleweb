@@ -1,47 +1,57 @@
-      function myMap() {
+        function myMap() {
+            var center = new google.maps.LatLng(59.9214, 10.8463);
 
-      var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
-          center: {lat: 50.8516, lng: 4.3471}
-        });
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: center,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
 
-        // Create an array of alphabetical characters used to label the markers.
-        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            var opt = {
+                "legend": {
+                    "Fatal" : "#FF0066",
+                    "Very serious injuries" : "#FF9933",
+                    "Serious injuries" : "#FFFF00" ,
+                    "Minor injuries" : "#99FF99",
+                    "No injuries" : "#66CCFF",
+                    "Not recorded" : "#A5A5A5"
+                }
+            };
 
-        // Add some markers to the map.
-        // Note: The code uses the JavaScript Array.prototype.map() method to
-        // create an array of markers based on a given "locations" array.
-        // The map() method here has nothing to do with the Google Maps API.
-        var markers = locations.map(function(location, i) {
-          return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
-          });
-        });
+            var markers = [];
+            for (var i = 0; i < data.features.length; i++) {
+                var accident_injuries = data.features[i].properties["5074"];
+                var accident_title = "";
+                var accident_lnglat = data.features[i].geometry["coordinates"];
+                switch (Number(accident_injuries)) {
+                    case 1:
+                        accident_title = "Fatal";
+                        break;
+                    case 3:
+                        accident_title = "Serious injuries";
+                        break;
+                    case 2:
+                        accident_title = "Very serious injuries";
+                        break;
+                    case 5:
+                        accident_title = "No injuries";
+                        break;
+                    case 4:
+                        accident_title = "Minor injuries";
+                        break;
+                    case 6:
+                        accident_title = "Not recorded";
+                        break;
+                }
+                var accident_LatLng = new google.maps.LatLng(Number(accident_lnglat[1]), Number(accident_lnglat[0]));
+                var marker = new google.maps.Marker({
+                    position: accident_LatLng,
+                    title: accident_title
+                });
+                markers.push(marker);
+            }
 
-        // Add a marker clusterer to manage the markers.
-        var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-      } /* fin function map */
-      
-      
-      var locations = [
-        {lat: 50.85158300886789, lng: 4.354448318481445},
-        {lat: 50.85127142909225, lng: 4.3552422523498535},
-        {lat: 50.85135812874186, lng: 4.3525684138435282},
-        {lat: 50.85158300886789, lng: 4.3535217892462821},
-        {lat: 50.85154651324789, lng: 4.3512358259358959},
-        
-        {lat: 50.8179745927569, lng: 4.371354648651622},
-        {lat: 50.8165423184352, lng: 4.375862584632311},
-        {lat: 50.8179745135476, lng: 4.374832151894531},
-        {lat: 50.8154854212105, lng: 4.372586158132346},
-        {lat: 50.8152569453156, lng: 4.373489561216548},
-        {lat: 50.8149523158432, lng: 4.371469985457883},
-        {lat: 50.8178625354854, lng: 4.376510654202368},
-        {lat: 50.8179265465457, lng: 4.377522131658408},
-        {lat: 50.8196389631478, lng: 4.379513248496482},
-        {lat: 50.8102574136069, lng: 4.373874641987165},
-        {lat: 50.8101558456727, lng: 4.379500548871792}
-      ];
-   
+        google.load("visualization", "1", {packages: ["corechart"]});
+        google.setOnLoadCallback(myMap);
+            var markerCluster = new MarkerClusterer(map, markers, opt);
+        }

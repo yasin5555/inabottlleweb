@@ -10,6 +10,7 @@ public $data = array();
  {
 $this->data["view_content"] = $this->load->view($view,$this->data,TRUE);
 $this->load->view($template, $this->data);
+
 }
 
 }
