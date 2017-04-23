@@ -172,22 +172,17 @@
     </div>
     <div id="divflex">
     	<div class="divflexi"><img width="100%" src="http://img.clubic.com/04811968-photo-twitter-fly-nouvelle-interface.jpg"></div>
-    	<div class="divflexi"><img style="height:initial;" width="100%" src="http://my.fakingnews.firstpost.com/files/2015/01/FB_Wall.jpg"></div>
-    	<div class="divflexi" style="overflow:hidden;"><img style="height: initial;" width="100%" src="http://img.clubic.com/05700840-photo-flux-instagram-sur-le-web.jpg"></div>
+
     	<div class="divflexi"><img src="http://meteorcapture.com/content/images/2015/03/Screen-Shot-2015-03-26-at-6-06-45-pm-1.png"></div>
-    	<div class="divflexi"><img width="100%" src="http://onlinehelp.tableau.com/current/pro/desktop/fr-fr/Img/exuserfilter8.png"></div>
     </div>
     <style type="text/css">
-    	#divflex {margin: 140px 128px; width: 87%; display:flex;justify-content:space-around;flex-wrap:wrap;}
-    	.divflexi {background-color: #22899f; width: 32%;height:380px;margin-bottom: 15px; border: 1px solid #b6b6b6;overflow: hidden;}
-    	.divflexi:nth-child(2) {overflow: hidden;}
-
-    	.divflexi:nth-child(4) {width:65.3%;height: 380px;}
+    	#divflex {margin: 135px 128px; width: 87%; display:flex;justify-content:space-around;flex-wrap:wrap;}
+    	.divflexi {background-color: #22899f; width: 32%;height:560px;margin-bottom: 15px; border: 1px solid #b6b6b6;overflow: hidden;}
+    	.divflexi:nth-child(2) {width:65.3%;height: 560px;}
     	/*.divflexi:nth-child(5) {height: 540px;}*/
-    	.divflexi img {height: 380px;}
-    	.divflexi:nth-child(4) img {}
-    	.divflexi:nth-child(5) img {}
+    	.divflexi img {height: 560px;}
     	.social a {padding: 15px 0px 15px 58px;}
+    	.divflexi:nth-child(2) img {margin-left: -239px;}
     </style>
 
 </body>
