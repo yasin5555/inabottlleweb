@@ -1,4 +1,4 @@
-        function initialize() {
+        function myMap() {
             var center = new google.maps.LatLng(59.9214, 10.8463);
 
             var map = new google.maps.Map(document.getElementById('map'), {
@@ -51,8 +51,7 @@
                 markers.push(marker);
             }
 
+        google.load("visualization", "1", {packages: ["corechart"]});
+        google.setOnLoadCallback(myMap);
             var markerCluster = new MarkerClusterer(map, markers, opt);
         }
-
-        google.load("visualization", "1", {packages: ["corechart"]});
-        google.setOnLoadCallback(initialize);

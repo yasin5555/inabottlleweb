@@ -34,15 +34,14 @@
 
 
 </div>
+<script src="<?= base_url("node_modules/jquery/dist/jquery.js")?>"></script>
  <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG9JH8LGpGuXa9Men4FjD06AKx7B94_7A&callback=myMap">
     </script>
 <script src="<?= base_url("assets/traffic_accidents.json")?>"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-<script src="<?= base_url("assets/js/app.js")?>"></script>
 <script src="<?= base_url("assets/js/markerclusterer.js")?>"></script>
-<script src="<?= base_url("node_modules/jquery/dist/jquery.js")?>"></script>
+<script src="<?= base_url("assets/js/app.js")?>"></script>
 </body>
 </html>
 
