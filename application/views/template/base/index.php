@@ -15,23 +15,22 @@
     <title>In a Bottle</title>
 </head>
 <body>
+    <div>
+
     <header>
         
-
 <?php $this->load->view("template/base/nav"); ?>
+
 
     </header>
 
+</div>
+    <?php $this->load->view("template/base/navleft"); ?>
+
 <div class="container">
 
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    
-</div>
-
-<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
     
 <?= $view_content ?>
-</div>
 
 
 </div>
