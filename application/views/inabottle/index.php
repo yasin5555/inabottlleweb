@@ -13,8 +13,14 @@
     body > div {position: relative;}
     header > ul > li {font-size: 25px;margin-left: 97px;}
 
+
     header ul {border-radius: 0px 0px 40px 40px;list-style-type: none; margin: 0; padding: 0; overflow: hidden; width: 64%; margin-left: 150px; display: inline-table; background-color: #22899f;}
 
+    header ul {
+		-webkit-box-shadow: 0px 0px 30px 5px rgba(255,255,255,1);
+		-moz-box-shadow: 0px 0px 30px 5px rgba(255,255,255,1);
+		box-shadow: 0px 0px 30px 5px rgba(255,255,255,1);
+    	;border-radius: 0px 0px 40px 40px;list-style-type: none; margin: 0; padding: 0; overflow: hidden; width: 64%; margin-left: 150px; display: inline-table; background-color: #22899f;}
 	header li {float: left;}
 
 	header li a, .dropbtn {display: inline-block;color: white;text-align: center;padding: 22px 34px;text-decoration: none;}
@@ -57,6 +63,7 @@
 		  font-weight: bold;
 		}
 		.social {
+		  z-index: 1000;
 		  position: fixed;
 		  top: 220px;
 		}
@@ -112,6 +119,7 @@
 		  transition: all 1s;
 		}
 		.social ul li i {
+		  
 		  margin-left: 10px;
 		  color: #000;
 		  background: #fff;
@@ -156,31 +164,33 @@
 	<div>
 		<nav class="social">
 	          <ul>
+
+	              <li><a href="http://facebook.com/gian.michelle">Utilisateur <i class="fa fa-user"></i></a></li>
 	              <li><a href="http://twitter.com/gian_michelle">Maps <i class="fa fker"><img width="100%" src="http://img4.hostingpics.net/pics/21419510410ddd6.png"></i></a></li>
 	              <li><a href="http://twitter.com/gian_michelle">Twitter <i class="fa fa-twitter"></i></a></li>
-	              <li><a href="http://facebook.com/gian.michelle">Utilisateur <i class="fa fa-user"></i></a></li>
+
 	              <li><a href="http://facebook.com/gian.michelle">Facebook <i class="fa fa-facebook"></i></a></li>
 	              <li><a href="http://dribbble.com/gian_michelle">Instagram <i class="fa fa-instagram"></i></a></li>
 	          </ul>
 	    </nav>
     </div>
     <div id="divflex">
-    	<div class="divflexi"></div>
-    	<div class="divflexi"></div>
-    	<div class="divflexi"></div>
-    	<div class="divflexi"></div>
-    	<div class="divflexi"></div>
-    	<div class="divflexi"></div>
-    	<div class="divflexi"></div>
-    	<div class="divflexi"></div>
-    	<div class="divflexi"></div>
-    	<div class="divflexi"></div>
-    	<div class="divflexi"></div>
-    	<div class="divflexi"></div>
+
+    	<div class="divflexi"><img width="100%" src="http://img.clubic.com/04811968-photo-twitter-fly-nouvelle-interface.jpg"></div>
+    	<div class="divflexi"><img width="100%" src="http://41mag.fr/wp-content/uploads/2012/04/0231.jpg"></div>
+    	<div class="divflexi"><img width="100%" src="https://www.slrlounge.com/wp-content/uploads/2016/02/instagram-point-reyes-shipwreck-fire-redacted-400x593.jpg"></div>
+    	<div class="divflexi"><img width="100%" src="http://meteorcapture.com/content/images/2015/03/Screen-Shot-2015-03-26-at-6-06-45-pm-1.png"></div>
+    	<div class="divflexi"><img width="100%" src="http://41mag.fr/wp-content/uploads/2012/04/0231.jpg"></div>
     </div>
     <style type="text/css">
-    	#divflex {margin: 135px 128px; width: 87%; border: 1px solid black;display:flex;justify-content:space-around;flex-wrap:wrap;}
-    	.divflexi {background-color: blue; width: 32%;height:270px;margin-bottom: 15px;}
+    	#divflex {margin: 135px 128px; width: 87%; display:flex;justify-content:space-around;flex-wrap:wrap;}
+    	.divflexi {background-color: #22899f; width: 32%;height:380px;margin-bottom: 15px; border: 1px solid #b6b6b6;}
+    	.divflexi:nth-child(4) {width:65.3%;height: 380px;}
+    	/*.divflexi:nth-child(5) {height: 540px;}*/
+    	.divflexi img {height: 380px;}
+    	.divflexi:nth-child(4) img {}
+    	.divflexi:nth-child(5) img {}
+
     </style>
 
 </body>
