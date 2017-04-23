@@ -3,52 +3,40 @@
 <head>
 	<title>hashtag in a bottle</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="">
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'> 
   	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">    
-
-</head>
-<body>
-	<div>
-		<header>
-			<div>
-				<img src="http://img4.hostingpics.net/pics/249732inabotlltlemin.png">
-			</div>
-			<ul>
-			  <li><a href="#home">&#35;In-a-bottle</a></li>
-			  <li><a href="#news">Default view</a></li>
-			  <li class="dropdown">
-			    <a href="javascript:void(0)" class="dropbtn">Filtres &#35;</a>
-			    <div class="dropdown-content">
-			      <a href="#">Link 1</a>
-			      <a href="#">Link 2</a>
-			      <a href="#">Link 3</a>
-			      <a href="#">Link 3</a>
-			    </div>
-			  </li>
-			</ul>
-		</header>
-		<!--aside></aside-->
-	</div>
-	<div>
-		<nav class="social">
-	          <ul>
-	              <li><a href="http://twitter.com/gian_michelle">Maps <i class="fa fa-map-marker"></i></a></li>
-	              <li><a href="http://twitter.com/gian_michelle">Twitter <i class="fa fa-twitter"></i></a></li>
-	              <li><a href="http://facebook.com/gian.michelle">Facebook <i class="fa fa-facebook"></i></a></li>
-	              <li><a href="http://dribbble.com/gian_michelle">Instagram <i class="fa fa-instagram"></i></a></li>
-	          </ul>
-	    </nav>
-	    <!--div class="me">  
-	         <p>Created by: <p><h1>Gian Di Serafino</h1><p> for <span>Informartion architecture</span></p>
-	    </div-->
-    </div>
-
-
-
-
-
     <style type="text/css">
-		a {
+    body {font-family: 'lato', sans-serif;background: rgba(35, 137, 158, 0.0901961);color: #fff;}
+    header {width: 100%;height:90px;position: fixed;z-index: 1000;/*display: flex; justify-content:space-between;*/top:0;margin-left: -8px;}
+    aside {width: 90px;height:800px;position: absolute;background-color: #22899f;}
+    body > div {position: relative;}
+    header > ul > li {font-size: 25px;margin-left: 97px;}
+
+    header ul {border-radius: 0px 0px 40px 40px;list-style-type: none; margin: 0; padding: 0; overflow: hidden; width: 64%; margin-left: 150px; display: inline-table; background-color: #22899f;}
+
+	header li {float: left;}
+
+	header li a, .dropbtn {display: inline-block;color: white;text-align: center;padding: 22px 34px;text-decoration: none;}
+
+	header li a:hover, .dropdown:hover .dropbtn {color: red;text-shadow: 0px 0px 40px white;b}
+
+	header li.dropdown {display: inline-block;}
+
+	header .dropdown-content {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
+
+	header .dropdown-content a {color: black;padding: 12px 16px;text-decoration: none;display: block;text-align: left;font-size: 20px;}
+	header .dropdown-content a:nth-child(1) {background-color: #df0000;}
+	header .dropdown-content a:nth-child(2) {background-color: orange;}
+	header .dropdown-content a:nth-child(3) {background-color: green;}
+	header .dropdown-content a:nth-child(4) {background-color: lightblue;}
+
+	header .dropdown-content a:hover {color: white;}
+
+	header .dropdown:hover .dropdown-content {display: block;}
+	header img {width: 100%;}
+	header > div {width:11%;float: left;margin: 20px 20px 0 30px;}
+			a {
 		  color: #fff;
 		  text-decoration: none;
 		}
@@ -70,7 +58,7 @@
 		}
 		.social {
 		  position: fixed;
-		  top: 130px;
+		  top: 220px;
 		}
 		.social ul {
 		  padding: 0px;
@@ -81,6 +69,7 @@
 		  transform: translate(-270px, 0);
 		}
 		.social ul li {
+		  border: 1px solid #dedede;
 		  display: block;
 		  margin: 5px;
 		  background: #22899f;
@@ -103,6 +92,7 @@
 		  -o-transform: translate(110px, 0);
 		  transform: translate(110px, 0);
 		  background: white;
+		  border: 1px solid #dedede;
 		}
 		.social ul li:hover a {
 		  color: #000;
@@ -139,12 +129,59 @@
 		  -o-transform: rotate(0deg);
 		  transform: rotate(0deg);
 		}
-
-		body {
-		  background: rgba(37, 52, 63, 0.24);
-		  color: #fff;
-		  font-family: 'Raleway', sans-serif;
-		}
     </style>
+</head>
+<body>
+	<div>
+		<header>
+			<div>
+				<img src="http://img4.hostingpics.net/pics/249732inabotlltlemin.png">
+			</div>
+			<ul>
+			  <li><a href="#home">&#35;In-a-bottle</a></li>
+			  <li><a href="#news">Default view</a></li>
+			  <li class="dropdown">
+			    <a href="javascript:void(0)" class="dropbtn">Filtres &#35;</a>
+			    <div class="dropdown-content">
+			      <a href="#">Link 1</a>
+			      <a href="#">Link 2</a>
+			      <a href="#">Link 3</a>
+			      <a href="#">Link 3</a>
+			    </div>
+			  </li>
+			</ul>
+		</header>
+		<!--aside></aside-->
+	</div>
+	<div>
+		<nav class="social">
+	          <ul>
+	              <li><a href="http://twitter.com/gian_michelle">Maps <i class="fa fker"><img width="100%" src="http://img4.hostingpics.net/pics/21419510410ddd6.png"></i></a></li>
+	              <li><a href="http://twitter.com/gian_michelle">Twitter <i class="fa fa-twitter"></i></a></li>
+	              <li><a href="http://facebook.com/gian.michelle">Utilisateur <i class="fa fa-user"></i></a></li>
+	              <li><a href="http://facebook.com/gian.michelle">Facebook <i class="fa fa-facebook"></i></a></li>
+	              <li><a href="http://dribbble.com/gian_michelle">Instagram <i class="fa fa-instagram"></i></a></li>
+	          </ul>
+	    </nav>
+    </div>
+    <div id="divflex">
+    	<div class="divflexi"></div>
+    	<div class="divflexi"></div>
+    	<div class="divflexi"></div>
+    	<div class="divflexi"></div>
+    	<div class="divflexi"></div>
+    	<div class="divflexi"></div>
+    	<div class="divflexi"></div>
+    	<div class="divflexi"></div>
+    	<div class="divflexi"></div>
+    	<div class="divflexi"></div>
+    	<div class="divflexi"></div>
+    	<div class="divflexi"></div>
+    </div>
+    <style type="text/css">
+    	#divflex {margin: 135px 128px; width: 87%; border: 1px solid black;display:flex;justify-content:space-around;flex-wrap:wrap;}
+    	.divflexi {background-color: blue; width: 32%;height:270px;margin-bottom: 15px;}
+    </style>
+
 </body>
 </html>
